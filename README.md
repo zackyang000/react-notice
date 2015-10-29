@@ -1,4 +1,4 @@
-redux-request
+react-notice
 ==========
 
 A mixin way for notifications.
