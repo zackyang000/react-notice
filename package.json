@@ -1,6 +1,6 @@
 {
   "name": "react-notice",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A mixin way for notifications.",
   "main": "build/index.js",
   "scripts": {
@@ -17,11 +17,8 @@
     "url": "https://github.com/TossShinHwa/react-notice/issues"
   },
   "homepage": "https://github.com/TossShinHwa/react-notice",
-  "peerDependencies": {
-    "react-notification-system": "^0.1.17"
-  },
   "dependencies": {
-    "react-notification-system": "^0.1.17"
+    "react-notification-system": "0.1.17"
   },
   "devDependencies": {
     "babel": "^5.8.21",
