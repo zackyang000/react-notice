@@ -1,11 +1,12 @@
 {
   "name": "react-notice",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A mixin way for notifications.",
   "main": "build/index.js",
   "scripts": {
     "test": "$(npm bin)/eslint src",
-    "build": "$(npm bin)/babel src --out-dir build"
+    "build": "$(npm bin)/babel src --out-dir build",
+    "prepublish": "make"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
   },
   "homepage": "https://github.com/TossShinHwa/react-notice",
   "dependencies": {
-    "react-notification-system": "0.1.17"
+    "react-notification-system": "0.2.6"
   },
   "devDependencies": {
     "babel": "^5.8.21",
