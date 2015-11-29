@@ -1,7 +1,11 @@
-.PHONY: build
+.PHONY: build compile test
 
-build:
-	npm run build
+default: build
+
+build: test compile
+
+compile:
+	node_modules/babel/bin/babel.js src --out-dir build
 
 test:
-	npm run test
+	node_modules/.bin/eslint src
