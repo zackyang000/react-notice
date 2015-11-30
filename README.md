@@ -14,6 +14,43 @@ npm install --save react-notice
 
 ## Usage
 
+Step.1 Declare it in the Root App.
+
 ```js
 import NoticeMixin, { NotificationSystem } from 'react-notice';
+
+var App = React.createClass({
+  mixins: [NoticeMixin],
+
+  componentDidMount() {
+    this.setNotice(this.refs.notificationSystem);
+  }
+
+  render: function() {
+    return (
+      <div>
+        <NotificationSystem ref="notificationSystem" />
+        ...
+      </div>
+    );
+  }
+});
+```
+
+Setp.2 Use it in any component.
+
+```js
+var Comp = React.createClass({
+  mixins: [NoticeMixin],
+  render: function() {
+    return (
+      <div>
+        <button onClick={this.notice("this's a success message.")}>success</button>
+        <button onClick={this.notice("this's a error message.", "error")}>error</button>
+        <button onClick={this.notice("this's a warning message.", "warning")}>warning</button>
+        <button onClick={this.notice("this's a info message.", "info")}>info</button>
+      </div>
+    );
+  }
+});
 ```
