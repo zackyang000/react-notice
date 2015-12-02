@@ -3,7 +3,7 @@ react-notice
 
 A mixin way for use notifications.
 
-this project is based on react-notification-system. Just simply use mixin to wrapped.
+this project is based on [react-notification-system](https://github.com/igorprado/react-notification-system). Just simply use mixin to wrapped.
 
   [![NPM Version](https://img.shields.io/npm/v/react-notice.svg?style=flat)](https://www.npmjs.org/package/react-notice)
   [![npm](https://img.shields.io/npm/dm/react-notice.svg?style=flat)](https://www.npmjs.org/package/react-notice)
